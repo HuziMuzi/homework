@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.popup {
+    display: flex;
+    background-color: rgb(167, 229, 1);
+    width: 270px;
+    padding: 7px;
+    align-items: end;
+    margin-bottom: 10px;
+    color: #a8c2b3;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.corner {
+    /*width: 0px;*/
+    /*height: 0px;*/
+    /*border-top: 10px solid transparent;*/
+    /*border-right: 10px solid rgb(3, 66, 4);*/
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, rgb(3, 66, 4) 0);
+}
+
+.info {
+    flex: 1 1;
+    background-color: rgb(3, 66, 4);
+    border-radius: 10px 10px 10px 0px;
+    padding: 10px;
+
+}
+
+.name {
+    padding-bottom: 0px;
+    color: rgb(173, 161, 201);
+}
+
+.message {
+    padding-bottom: 3px;
+    word-wrap: break-word;
+}
+
+.date {
+    display: flex;
+    justify-content: flex-end;
+}
+
