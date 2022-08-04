@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.viewSpan {
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    height: 45px;
+    width: 100px;
+    cursor: pointer;
+
+}
+
+.pen {
+    background-image: url('https://www.svgrepo.com/show/230569/pencil-edit.svg');
+}
+
+.blockSpan {
+    display: flex;
+    align-items: center;
+}
