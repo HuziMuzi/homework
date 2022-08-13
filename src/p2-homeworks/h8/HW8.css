@@ -1,0 +1,18 @@
+
+.blockButtons {
+    display: flex;
+}
+
+.finalPeople {
+    /*display: flex;*/
+    margin: 20px;
+}
+
+
+.tablePeople {
+    display: flex;
+}
+
+.name {
+    width: 200px;
+}
