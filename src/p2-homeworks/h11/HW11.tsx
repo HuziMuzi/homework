@@ -7,13 +7,13 @@ import './HW11.css'
 function HW11() {
     const [value1, setValue1] = useState(0)
     const [value2, setValue2] = useState(100)
+    const [disabled, setDisabled] = useState(false)
 
 
     const onChangeDoubleRange = (value: [number, number]) => {
         setValue1(value[0])
         setValue2(value[1])
     }
-
     return (
         <div>
             <hr/>
@@ -27,6 +27,7 @@ function HW11() {
                         // сделать так чтоб value1 изменялось
                         onChangeRange={(currVal) => setValue1(currVal)}
                         value={value1}
+                        disabled={disabled}
 
                     />
                 </div>
@@ -40,6 +41,8 @@ function HW11() {
                             // сделать так чтоб value1 и value2 изменялось
                             onChangeDoubleRange={onChangeDoubleRange}
                             value={[value1, value2]}
+                            setDisable={setDisabled}
+                            disabled={disabled}
                         />
                     </Col>
                     <Col flex="none">

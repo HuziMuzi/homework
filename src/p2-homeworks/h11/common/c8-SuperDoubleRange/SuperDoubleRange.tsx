@@ -1,15 +1,15 @@
 import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes} from 'react'
 import 'antd/dist/antd.css';
-import {Slider} from "antd";
+import {Slider, Switch} from "antd";
 import './SuperDoubleRange.css'
 
 
 type SuperDoubleRangePropsType =  {
     onChangeDoubleRange?: (value: [number, number]) => void
     value?: [number, number]
-    min? : number,
-    max? : number,
+    setDisable: (cheked:boolean) => void
     step? : number
+    disabled: boolean
     // min, max, step, disable, ...
 }
 
@@ -17,7 +17,7 @@ type SuperDoubleRangePropsType =  {
 const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     {
         onChangeDoubleRange, value,
-        min,max,step
+        setDisable,disabled,step
         // min, max, step, disable, ...
     }
 ) => {
@@ -28,6 +28,12 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
         }
     }
 
+    const onChangeDisabled = (checked: boolean) => {
+        setDisable(checked)
+    }
+
+
+
     return (
         <>
             <div className={'slider'}>
@@ -36,7 +42,9 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
                         value={value}
                         onChange={onChangeInput}
                         className={'slider'}
+                        disabled={disabled}
                 />
+               <Switch size="small" checked={disabled} onChange={onChangeDisabled} />
             </div>
         </>
     )
