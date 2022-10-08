@@ -1,7 +1,12 @@
+
+
 .blockInput {
     margin-left: 20px;
 }
 
 .input {
-    margin-right: 10px;
+    display: inline-block;
+    margin-right: 20px;
+    width: 15px;
+    height: 15px;
 }
