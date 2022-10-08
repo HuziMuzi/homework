@@ -12,11 +12,10 @@ function HW11() {
     const onChangeDoubleRange = (value: [number, number]) => {
         setValue1(value[0])
         setValue2(value[1])
-        // console.log(value[0])
     }
 
     return (
-        <div >
+        <div>
             <hr/>
             homeworks 11
 
@@ -36,7 +35,7 @@ function HW11() {
                     <Col flex="none">
                         <span className={'input'}>{value1}</span>
                     </Col>
-                    <Col flex="0 0 150px">
+                    <Col flex="0 0 130px">
                         <SuperDoubleRange
                             // сделать так чтоб value1 и value2 изменялось
                             onChangeDoubleRange={onChangeDoubleRange}
