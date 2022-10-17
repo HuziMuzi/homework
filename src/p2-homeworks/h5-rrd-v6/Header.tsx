@@ -22,6 +22,7 @@ function Header() {
                         to={'/junior+'}>junior+ </NavLink>
                 </li>
             </ul>
+
             <span className={s.blockHover}></span>
         </div>
     )
