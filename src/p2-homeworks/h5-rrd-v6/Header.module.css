@@ -9,8 +9,7 @@ a {
 
 
 .blockLinks {
-    /*display: flex;*/
-    /*justify-content: space-between;*/
+
     position: relative;
     left: -190px;
     width: 210px;
@@ -29,13 +28,13 @@ a {
 }
 
 .blockLinks:hover {
-    left: 0px;
+    
 }
 
 .blockHover {
     width: 30px;
     height: 30px;
-    background-color: #0cfd0c;
+    /*background-color: #0cfd0c;*/
 }
 
 .active {
