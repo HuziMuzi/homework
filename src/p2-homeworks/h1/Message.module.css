@@ -22,10 +22,7 @@
 }
 
 .corner {
-    /*width: 0px;*/
-    /*height: 0px;*/
-    /*border-top: 10px solid transparent;*/
-    /*border-right: 10px solid rgb(3, 66, 4);*/
+
     width: 15px;
     height: 15px;
     background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, rgb(3, 66, 4) 0);
@@ -34,13 +31,13 @@
 .info {
     flex: 1 1;
     background-color: rgb(3, 66, 4);
-    border-radius: 10px 10px 10px 0px;
+    border-radius: 10px 10px 10px 0;
     padding: 10px;
 
 }
 
 .name {
-    padding-bottom: 0px;
+    padding-bottom: 0;
     color: rgb(173, 161, 201);
 }
 
